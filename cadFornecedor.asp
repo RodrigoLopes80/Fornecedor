@@ -1,5 +1,7 @@
 <!--#include file="superior.asp"-->  
 <!--#include file="Sqlcnx.asp"-->  
+<!--#include file="valida.asp"-->   
+
 <%
 sql = "select * from Cadastro order by NomeFantasia"
 set rs = conexao.execute(sql)
