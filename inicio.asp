@@ -1,8 +1,9 @@
 <!--#include file="superior.asp"-->  
-<!--#include file="Sqlcnx.asp"-->  
+<!--#include file="Sqlcnx.asp"--> 
+<!--#include file="valida.asp"-->   
 <br><br>  
 <div class="alert alert-success" role="alert">
-  Olá Usuário(a), <br>seja bem-vindo(a) ao site de teste em ASP Classico
+  Olá <%=session("usr")%>, <br>seja bem-vindo(a) ao site de teste em ASP Classico
 </div>
 
 <br><br>
@@ -13,8 +14,11 @@ set rs = conexao.execute(sql)
 
 if not rs.eof then
 %>
-<div class="alert alert-primary" role="alert">
-  Nova(s) Mensagem(s)<br>
+<div class="alert alert-primary"  role="alert">
+<div style="font-weight:bold">
+  Novos Fornecedores<br>
+  </div>
+  <hr/>
 <%do while not rs.eof%>  
  <%=rs("NomeFantasia")%> - <%=rs("RazaoSocial")%><br>
 <%rs.movenext

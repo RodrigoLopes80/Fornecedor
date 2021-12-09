@@ -28,10 +28,11 @@
           Cadastros
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="cadFornecedor.asp">Fornecedor</a>    
+          <a class="dropdown-item" href="cadFornecedor.asp">Fornecedor</a>  
+		  <a class="dropdown-item" href="cadUsuario.asp">Usuários</a>   
         </div> 
     </ul>
 
   </div>
-    <a class="nav-link " style="color:white; background:lightblue" href="index.asp" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Sair</a>     
+    <a class="nav-link " style="color:white; background:lightblue" href="index.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Sair</a>     
 </nav>
